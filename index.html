@@ -24,6 +24,10 @@ button,input,select,textarea{font:inherit} button{cursor:pointer}
 
 .entryCards{display:grid;gap:12px;margin-top:14px}.entryCard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:0 8px 22px rgba(38,73,63,.06)}.entryCardTop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.entryCard h3{margin:0;font-size:18px}.entryMeta{color:var(--muted);font-size:12px;font-weight:800;margin-top:4px;line-height:1.35}.entryBadges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.badge.green{background:var(--soft);color:var(--brand2)}.badge.blue{background:var(--blue);color:#42609a}.badge.gray{background:#eef1ef;color:var(--muted)}.portionTools{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end}.portionTools .btn{padding:12px 14px}.entryNote{margin-top:10px;color:var(--muted);font-size:13px;line-height:1.4}.entryActions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}.deleteEntryBtn,.editEntryBtn{border:0;border-radius:999px;font-weight:900;padding:8px 11px;cursor:pointer}.deleteEntryBtn{background:#ffe8e6;color:#b94a43}.editEntryBtn{background:var(--soft);color:var(--brand2)}.deleteEntryBtn:active,.editEntryBtn:active{transform:scale(.98)}.editingBanner{border:2px solid rgba(93,167,144,.28);background:linear-gradient(135deg,#fffefa,#eaf6f1)}.editActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.compactFilters{display:grid;grid-template-columns:1fr 120px 130px 130px 170px;gap:10px;margin-top:10px}@media(max-width:760px){.compactFilters,.portionTools{grid-template-columns:1fr}.entryCardTop{gap:8px}.entryCard h3{font-size:19px}.entryBadges .badge{font-size:13px;padding:7px 10px}}
 
+.authError{background:#ffe8e6;color:#9b3a34;border:1px solid rgba(216,93,85,.35);border-radius:16px;padding:12px 14px;font-size:13px;font-weight:800;line-height:1.35;white-space:pre-wrap}
+.authError b{display:block;margin-bottom:4px;color:#7b2824}
+.authLoading{opacity:.68;pointer-events:none}
+
 .savingsGoal{position:relative;overflow:hidden;background:linear-gradient(135deg,#eaf4ef,#fffefa 58%,#e8f1ed);border-radius:26px;padding:20px;border:1px solid rgba(255,255,255,.85);box-shadow:var(--shadow)}.savingsGoal:after{content:"↗";position:absolute;right:18px;top:10px;font-size:82px;line-height:1;color:rgba(33,48,43,.07);font-weight:950}.goalLine{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;position:relative;z-index:1}.goalTitle{font-size:24px;font-weight:950;letter-spacing:-.04em}.goalAmount{font-size:18px;color:var(--muted);margin-top:8px}.savedLine{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-top:18px;position:relative;z-index:1}.leftBox{text-align:right;color:var(--muted)}.leftBox b{display:block;color:var(--text);font-size:20px;margin-top:3px}.quickGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}.quickCard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;min-height:86px}.quickCard span{display:block;color:var(--muted);font-size:12px;font-weight:800;margin-bottom:8px}.quickCard b{font-size:18px}.statsList .line{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}.statsList .line:last-child{border-bottom:0}.statsList .label{color:var(--muted)}.statsList .value{font-weight:900;text-align:right}.pillStatus{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:8px 13px;background:var(--soft);color:var(--brand2);font-weight:900}.pillStatus.bad{background:#ffe7e4;color:var(--red)}.miniYearBars{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;height:230px;align-items:end;padding:20px 6px 34px;border-bottom:1px dashed var(--line);position:relative}.yearPair{display:flex;align-items:end;justify-content:center;gap:5px;height:100%;position:relative}.barFact,.barPlan{width:14px;min-height:4px;border-radius:99px;background:var(--brand);opacity:.78}.barPlan{background:var(--brand2);opacity:1}.yearPair small{position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);white-space:nowrap;color:var(--muted);font-size:11px;font-weight:800}.currencyCards{display:grid;gap:10px}.currencyCard{display:grid;grid-template-columns:1fr 130px;gap:10px;align-items:end;background:#fff;border:1px solid var(--line);border-radius:18px;padding:13px}.currencyCode{font-size:19px;font-weight:950}.currencyName{font-size:12px;color:var(--muted);margin-top:3px}.historyCards{display:grid;gap:10px}.txCard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:13px;display:flex;justify-content:space-between;gap:12px}.txCard .amount{font-size:18px;font-weight:950}.txCard .base{font-weight:950;text-align:right}.txCard.expense .base{color:var(--red)}.currencyHead{display:flex;align-items:center;gap:10px}.currencyFlag{font-size:30px;line-height:1}.currencyPicker{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end}.currencySearch{margin-bottom:10px}.currencyRemove{font-size:12px;padding:8px 10px}.currencyCard .currencyName{font-size:13px}.currencyCodeRow{display:flex;align-items:center;gap:8px}.currencyCodeRow .currencyCode{font-size:20px}@media(max-width:760px){.quickGrid{grid-template-columns:repeat(2,1fr)}.currencyCard{grid-template-columns:1fr}.miniYearBars{gap:8px}.barFact,.barPlan{width:10px}.savedLine{align-items:flex-start}.goalTitle{font-size:23px}}
 
 
@@ -66,6 +70,7 @@ button,input,select,textarea{font:inherit} button{cursor:pointer}
           <button class="btn" type="submit" data-auth="signup">Создать аккаунт</button>
         </div>
         <button class="btn btnWide" type="button" id="resetPassBtn">Сбросить пароль</button>
+        <div id="authErrorBox" class="authError hidden"></div>
       </form>
       <p class="muted small">Не используй SMS-вход — для твоего сайта достаточно бесплатного входа по email и паролю.</p>
     </div>
@@ -77,7 +82,7 @@ button,input,select,textarea{font:inherit} button{cursor:pointer}
         <div>
           <p class="eyebrow">Личный семейный сайт</p>
           <h1>Mark Tracker</h1>
-          <p class="sub">Выбери трекер на главной странице: прикорм Марка или накопления.</p>
+          <p class="sub">Выбери трекер на главной странице: прикорм Марка или накопления.</p><p class="muted small">Версия: Dashboard v4</p>
         </div>
         <div class="userBox">
           <span class="muted" id="userEmail">—</span>
@@ -153,9 +158,33 @@ button,input,select,textarea{font:inherit} button{cursor:pointer}
   <nav id="bottomNav" class="bottomNav hidden"></nav>
   <div id="toast" class="toast"></div>
   <script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+let initializeApp, getAuth, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut;
+let getFirestore, doc, getDoc, setDoc, serverTimestamp;
+
+async function loadFirebaseSdk(){
+  if(initializeApp) return;
+  try{
+    const [appMod, authMod, fsMod] = await Promise.all([
+      import("https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"),
+      import("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"),
+      import("https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js")
+    ]);
+    initializeApp = appMod.initializeApp;
+    getAuth = authMod.getAuth;
+    onAuthStateChanged = authMod.onAuthStateChanged;
+    signInWithEmailAndPassword = authMod.signInWithEmailAndPassword;
+    createUserWithEmailAndPassword = authMod.createUserWithEmailAndPassword;
+    sendPasswordResetEmail = authMod.sendPasswordResetEmail;
+    signOut = authMod.signOut;
+    getFirestore = fsMod.getFirestore;
+    doc = fsMod.doc;
+    getDoc = fsMod.getDoc;
+    setDoc = fsMod.setDoc;
+    serverTimestamp = fsMod.serverTimestamp;
+  }catch(err){
+    throw new Error("Firebase SDK не загрузился. Проверь интернет или обнови страницу. " + (err?.message || err));
+  }
+}
 
 // Firebase config уже вставлен для проекта MyBase.
 // Это не пароль, но используй файл только для своего проекта.
@@ -5519,40 +5548,176 @@ async function loadUserData(){
   if(sSnap.exists()) savings = {...deep(DEFAULT_SAVINGS), ...sSnap.data()}; else { savings = deep(DEFAULT_SAVINGS); await saveSavings(); }
 }
 
-function showAuth(){ $("#authScreen").classList.remove("hidden"); $("#appScreen").classList.add("hidden"); $("#bottomNav").classList.add("hidden"); }
-function showApp(){ $("#authScreen").classList.add("hidden"); $("#appScreen").classList.remove("hidden"); $("#bottomNav").classList.remove("hidden"); renderAll(); }
 
-function init(){
-  if(isConfigMissing){ $("#firebaseWarning").classList.remove("hidden"); }
-  if(!isConfigMissing){
-    app = initializeApp(firebaseConfig); auth = getAuth(app); db = getFirestore(app);
-    onAuthStateChanged(auth, async (user) => {
-      if(!user){ uid=""; showAuth(); return; }
-      uid = user.uid; $("#userEmail").textContent = user.email || "Аккаунт";
-      try{ await loadUserData(); showApp(); }catch(e){ console.error(e); toast("Ошибка загрузки данных Firebase"); }
-    });
+function showAuthError(message, err){
+  const box = $("#authErrorBox");
+  if(!box) return toast(message);
+  const code = err?.code ? `\nКод: ${err.code}` : "";
+  box.innerHTML = `<b>Ошибка входа</b>${esc(message)}${esc(code)}`;
+  box.classList.remove("hidden");
+}
+function clearAuthError(){
+  const box = $("#authErrorBox");
+  if(box){ box.textContent=""; box.classList.add("hidden"); }
+}
+function friendlyAuthError(err){
+  const code = err?.code || "";
+  if(code.includes("invalid-credential")) return "Неверный email или пароль. Проверь данные и попробуй снова.";
+  if(code.includes("wrong-password")) return "Неверный пароль.";
+  if(code.includes("user-not-found")) return "Аккаунт с таким email не найден.";
+  if(code.includes("too-many-requests")) return "Слишком много попыток. Подожди немного и попробуй снова.";
+  if(code.includes("network-request-failed")) return "Нет соединения с Firebase. Проверь интернет и обнови страницу.";
+  if(code.includes("unauthorized-domain")) return "Этот домен не добавлен в Firebase Auth. Нужно добавить rastamanwwee.github.io в Authorized domains.";
+  if(code.includes("operation-not-allowed")) return "В Firebase не включён вход по Email/Password.";
+  if(code.includes("invalid-email")) return "Email введён неправильно.";
+  if(code.includes("missing-password")) return "Введи пароль.";
+  return err?.message || "Не удалось войти. Попробуй обновить страницу.";
+}
+let openingUser = false;
+async function openAppForUser(user){
+  if(!user){ uid=""; showAuth(); return; }
+  if(openingUser) return;
+  openingUser = true;
+  try{
+    uid = user.uid || "";
+    $("#userEmail").textContent = user.email || "Аккаунт";
+    try{
+      await loadUserData();
+    }catch(e){
+      console.error("loadUserData failed", e);
+      toast("Ошибка загрузки Firebase, сайт открыт с локальными данными");
+    }
+    clearAuthError();
+    showApp();
+  }catch(e){
+    console.error("openAppForUser failed", e);
+    showAuth();
+    showAuthError("Вход прошёл, но интерфейс не открылся: " + (e?.message || e), e);
+  }finally{
+    openingUser = false;
   }
-  bindAuth(); bindNavigation();
-  if(isConfigMissing){ showAuth(); }
+}
+window.addEventListener("error", (e)=>{
+  console.error("Global error", e.error || e.message);
+  const authVisible = $("#authScreen") && !$("#authScreen").classList.contains("hidden");
+  if(authVisible) showAuthError("Ошибка JavaScript: " + (e.message || "неизвестная ошибка"), e.error);
+});
+window.addEventListener("unhandledrejection", (e)=>{
+  console.error("Unhandled rejection", e.reason);
+  const authVisible = $("#authScreen") && !$("#authScreen").classList.contains("hidden");
+  if(authVisible) showAuthError("Ошибка загрузки: " + (e.reason?.message || e.reason || "неизвестная ошибка"), e.reason);
+});
+
+function showAuth(){ $("#authScreen").classList.remove("hidden"); $("#appScreen").classList.add("hidden"); $("#bottomNav").classList.add("hidden"); }
+function showApp(){
+  $("#authScreen").classList.add("hidden");
+  $("#appScreen").classList.remove("hidden");
+  $("#bottomNav").classList.remove("hidden");
+  try{ renderAll(); }catch(e){ console.error(e); toast("Ошибка интерфейса: " + (e.message || e)); }
+}
+
+async function init(){
+  showAuth();
+  bindNavigation();
+
+  if(isConfigMissing){
+    $("#firebaseWarning").classList.remove("hidden");
+    showAuthError("Firebase config не заполнен. Нужно вставить настройки проекта Firebase.");
+    bindAuth();
+    return;
+  }
+
+  try{
+    await loadFirebaseSdk();
+    app = initializeApp(firebaseConfig);
+    auth = getAuth(app);
+    db = getFirestore(app);
+    bindAuth();
+    onAuthStateChanged(auth, async (user) => {
+      await openAppForUser(user);
+    });
+  }catch(e){
+    console.error("Firebase init failed", e);
+    bindAuth();
+    showAuthError(friendlyAuthError(e), e);
+  }
 }
 
 function bindAuth(){
-  $("#authForm").addEventListener("click", e => { const btn=e.target.closest("button[data-auth]"); if(btn) authMode=btn.dataset.auth; });
-  $("#authForm").addEventListener("submit", async e => {
+  const form = $("#authForm");
+  const emailEl = $("#email");
+  const passEl = $("#password");
+  if(!form) return;
+
+  form.addEventListener("click", e => {
+    const btn = e.target.closest("button[data-auth]");
+    if(btn) authMode = btn.dataset.auth || "login";
+  });
+
+  form.addEventListener("submit", async e => {
     e.preventDefault();
-    if(isConfigMissing) return toast("Сначала вставь настройки Firebase в firebase-config.js");
-    const email=$("#email").value.trim(), pass=$("#password").value;
+    clearAuthError();
+
+    const submitterMode = e.submitter?.dataset?.auth;
+    const mode = submitterMode || authMode || "login";
+    const email = (emailEl?.value || "").trim();
+    const pass = passEl?.value || "";
+
+    if(!email) return showAuthError("Введи email.");
+    if(!pass) return showAuthError("Введи пароль.");
+    if(isConfigMissing) return showAuthError("Firebase config не заполнен.");
+    if(!auth){
+      try{
+        await loadFirebaseSdk();
+        app = app || initializeApp(firebaseConfig);
+        auth = auth || getAuth(app);
+        db = db || getFirestore(app);
+      }catch(err){
+        return showAuthError(friendlyAuthError(err), err);
+      }
+    }
+
+    form.classList.add("authLoading");
     try{
-      if(authMode === "signup") await createUserWithEmailAndPassword(auth,email,pass);
-      else await signInWithEmailAndPassword(auth,email,pass);
-    }catch(err){ toast(err.message || "Ошибка входа"); }
+      const credential = mode === "signup"
+        ? await createUserWithEmailAndPassword(auth,email,pass)
+        : await signInWithEmailAndPassword(auth,email,pass);
+
+      toast(mode === "signup" ? "Аккаунт создан" : "Вход выполнен");
+      if(credential?.user) await openAppForUser(credential.user);
+    }catch(err){
+      console.error("Auth error", err);
+      showAuthError(friendlyAuthError(err), err);
+    }finally{
+      form.classList.remove("authLoading");
+    }
   });
-  $("#resetPassBtn").addEventListener("click", async () => {
-    if(isConfigMissing) return toast("Сначала подключи Firebase");
-    const email=$("#email").value.trim(); if(!email) return toast("Введи email");
-    try{ await sendPasswordResetEmail(auth,email); toast("Письмо для сброса пароля отправлено"); }catch(e){ toast(e.message || "Ошибка"); }
+
+  $("#resetPassBtn")?.addEventListener("click", async () => {
+    clearAuthError();
+    const email = (emailEl?.value || "").trim();
+    if(!email) return showAuthError("Введи email для сброса пароля.");
+    if(!auth){
+      try{
+        await loadFirebaseSdk();
+        app = app || initializeApp(firebaseConfig);
+        auth = auth || getAuth(app);
+      }catch(err){
+        return showAuthError(friendlyAuthError(err), err);
+      }
+    }
+    try{
+      await sendPasswordResetEmail(auth,email);
+      toast("Письмо для сброса пароля отправлено");
+    }catch(err){
+      showAuthError(friendlyAuthError(err), err);
+    }
   });
-  $("#logoutBtn").addEventListener("click", () => signOut(auth));
+
+  $("#logoutBtn")?.addEventListener("click", async () => {
+    try{ if(auth) await signOut(auth); }
+    finally{ uid=""; showAuth(); }
+  });
 }
 
 function bindNavigation(){
@@ -5933,9 +6098,9 @@ function calendarInitialMonth(){ const latest=(feeding.entries||[]).map(e=>e.dat
 function renderFeedingEntry(){
   const portions=portionOptions();
   const meals=mealOptions();
-  const ages=[...new Set([...ageOptions(), babyAgeLabel((editingEntry?.date || feedingEntryPrefillDate || today()))])];
   let editingEntry=editingFeedingEntryId ? (feeding.entries||[]).find(e=>String(e.id||"")===String(editingFeedingEntryId)) : null;
   if(editingFeedingEntryId && !editingEntry){ editingFeedingEntryId=""; editingEntry=null; }
+  const ages=[...new Set([...ageOptions(), babyAgeLabel((editingEntry?.date || feedingEntryPrefillDate || today()))])];
   const prefillExistingDay=feedingEntryPrefillDate ? entriesForDate(feedingEntryPrefillDate)[0] : null;
   const formDate=editingEntry?.date || feedingEntryPrefillDate || today();
   const formDay=editingEntry?.planDay || prefillExistingDay?.planDay || nextFeedingPlanDay();
