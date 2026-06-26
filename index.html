@@ -82,7 +82,7 @@ button,input,select,textarea{font:inherit} button{cursor:pointer}
         <div>
           <p class="eyebrow">Личный семейный сайт</p>
           <h1>Mark Tracker</h1>
-          <p class="sub">Выбери трекер на главной странице: прикорм Марка или накопления.</p><p class="muted small">Версия: Dashboard v4</p>
+          <p class="sub">Выбери трекер на главной странице: прикорм Марка или накопления.</p><p class="muted small">Версия: Dashboard v5</p>
         </div>
         <div class="userBox">
           <span class="muted" id="userEmail">—</span>
@@ -5771,6 +5771,14 @@ function feedingStats(){
   const allergens=feeding.products.filter(p => p.allergen && isIntroduced(p)).length;
   const latest=feeding.entries.map(e=>e.date).filter(Boolean).sort().at(-1)||"—";
   return {total,introduced,remaining:Math.max(0,total-introduced),entries:feeding.entries.length,reactionsCount,allergens,latest,pct:total?Math.round(introduced/total*100):0};
+}
+
+function latestPlanDay(){
+  const days=(feeding.entries||[]).map(e=>n(e.planDay)).filter(v=>v>0);
+  if(days.length) return Math.max(...days);
+  const dated=[...(feeding.entries||[])].filter(e=>e.date).sort((a,b)=>String(a.date||"").localeCompare(String(b.date||"")));
+  if(dated.length) return dated.length;
+  return "—";
 }
 
 function latestGrowth(){
