@@ -5491,7 +5491,7 @@ let feedingCalendarMonth = "";
 let feedingCalendarSelectedDate = "";
 let feedingEntryPrefillDate = "";
 let authMode = "login";
-const APP_VERSION = "MyBase v11 App Mode";
+const APP_VERSION = "MyBase v12 App Mode";
 const DATA_VERSION = "1.2";
 let diagnosticsLog = [];
 let lastSelfCheck = null;
@@ -6008,6 +6008,9 @@ function babyDashboardStats(){
   const month=monthKey(today());
   const monthNew=(feeding.entries||[]).filter(e=>monthKey(e.date)===month && String(e.status||"").toLowerCase().includes("введ")).length;
   return {feeding:st,growth:g,illness,todayEntries,monthNew,teeth:teethCount(),events:upcomingEvents(3)};
+}
+function dashboardData(){
+  return babyDashboardStats();
 }
 function smartAssistantHtml(){
   const data=babyDashboardStats();
